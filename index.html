@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Cookie Clicker</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cookie Clicker</h1>
+        <div class="cookie-container">
+            <button id="cookie" class="cookie-button">
+                <img src="images/cookie.png" alt="Cookie" class="cookie-image">
+            </button>
+        </div>
+        <h2 id="cookiesCount">Cookies: 0</h2>
+        <h3 id="cpsCount">Cookies per second: 0</h3>
+
+        <!-- Upgrades Section -->
+        <div class="upgrades">
+            <h3>Upgrade your clicking power!</h3>
+            <div class="upgrade" id="upgrade1">
+                <button class="upgrade-button" data-cost="10" data-id="1">Buy Cursor (Cost: 10 Cookies)</button>
+                <p class="upgrade-description">Increase your clicking power.</p>
+            </div>
+            <div class="upgrade" id="upgrade2">
+                <button class="upgrade-button" data-cost="50" data-id="2">Buy Grandma (Cost: 50 Cookies)</button>
+                <p class="upgrade-description">A grandma who bakes cookies for you.</p>
+            </div>
+            <div class="upgrade" id="upgrade3">
+                <button class="upgrade-button" data-cost="150" data-id="3">Buy Farm (Cost: 150 Cookies)</button>
+                <p class="upgrade-description">Grow cookie plants.</p>
+            </div>
+            <div class="upgrade" id="upgrade4">
+                <button class="upgrade-button" data-cost="500" data-id="4">Buy Factory (Cost: 500 Cookies)</button>
+                <p class="upgrade-description">Automate cookie production.</p>
+            </div>
+            <div class="upgrade" id="upgrade5">
+                <button class="upgrade-button" data-cost="1000" data-id="5">Buy Mine (Cost: 1000 Cookies)</button>
+                <p class="upgrade-description">Mine cookies directly from the ground.</p>
+            </div>
+            <h3 id="cursorsCount">Cursors: 0</h3>
+        </div>
+
+        <div id="upgradeOutput">
+            <p id="cursorCps">Cursors: 0 cookies/sec</p>
+            <p id="grandmaCps">Grandmas: 0 cookies/sec</p>
+            <p id="farmCps">Farms: 0 cookies/sec</p>
+            <p id="factoryCps">Factories: 0 cookies/sec</p>
+            <p id="mineCps">Mines: 0 cookies/sec</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

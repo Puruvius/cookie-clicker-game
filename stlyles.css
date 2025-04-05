@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    text-align: center; /* Center text inside the container */
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-container {
+    margin: 20px 0;
+}
+
+/* Style for the cookie button */
+.cookie-button {
+    border: none; /* Remove button border */
+    background: transparent; /* Transparent background for the button */
+    cursor: pointer; /* Show pointer cursor on hover */
+    outline: none; /* Remove outline when clicked */
+}
+
+/* Style for the cookie image */
+.cookie-image {
+    max-width: 100px; /* Adjust max width to make it smaller */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Add a nice effect on hover */
+}
+
+/* Hover effect for the cookie image */
+.cookie-image:hover {
+    transform: scale(1.1); /* Slightly enlarges the cookie on hover */
+}
+
+.upgrades {
+    margin-top: 20px;
+}
+
+.upgrade {
+    margin-bottom: 10px; /* Space between upgrades */
+}
+
+.upgrade-button {
+    padding: 10px 15px; /* Button padding */
+    border: none; /* Remove button border */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+.upgrade-button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.upgrade-button:disabled {
+    background-color: #6c757d; /* Gray background when disabled */
+    cursor: not-allowed; /* Change cursor when disabled */
+}
+
+#upgradeOutput {
+    margin-top: 20px;
+}
